@@ -1,0 +1,44 @@
+---
+
+open_command: "open -n"
+
+open_safari: "open -a"
+
+
+start: 
+  opera:  
+    "/Applications/Opera 2.app"
+  opera_new:  
+    "/Applications/Opera.app"
+  firefox: 
+    "/Applications/Firefox.app"
+  chrome: 
+    "/Applications/Google Chrome.app"
+  safari: 
+    "Safari"
+
+stop:
+  opera: 
+    "Opera"
+  firefox: 
+    "firefox"
+  chrome: 
+    "Google Chrome"
+  safari: 
+    "Safari"
+
+clean: 
+  opera: 
+    - ~/Library/Caches/Opera/
+    - ~/Library/Application Support/Opera/
+  opera_new: 
+    - ~/Library/Caches/com.operasoftware.Opera/
+    - ~/Library/Application Support/com.operasoftware.Opera/
+  firefox: 
+    - ~/Library/Caches/Firefox/
+    - ~/Library/Application Support/Firefox/
+  chrome: 
+    - ~/Library/Caches/Google/Chrome/
+    - ~/Library/Application Support/Google/Chrome/
+  safari: 
+    - ~/Library/Caches/com.apple.Safari/
